@@ -57,6 +57,11 @@ main .main-nav-laterale .nav-top {
   margin-bottom: 10px;
 }
 
+.nav-top .nav-logo{
+  height: 80%;
+  overflow: hidden;
+}
+
 /* SEZIONE RICERCA */
 
 .nav-top .nav-logo .ricerca .selection{
@@ -87,6 +92,8 @@ main .main-nav-laterale .nav-top {
 
 /* SEZIONE PLAYLIST */
 
+
+
 .nav-top .nav-logo .playlist div{
   display: flex;
   align-items: center;
@@ -113,11 +120,17 @@ main .main-nav-laterale .nav-top {
 
 /* SEZIONE LISTA-PLAYLIST */
 
+.nav-top .nav-logo .lista-playlist{
+  height: 80%;
+}
+
 .nav-top .nav-logo .lista-playlist ul{
+  height: 80%;
   list-style: none;
   color: #6F6F6F;
   line-height: 30px;
   font-size: 13px;
+  overflow-y: auto;
 }
 
 
@@ -188,11 +201,25 @@ main #content {
 }
 
 main #content .navbar-fixed {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: fixed;
   width: calc(100% - 230px);
   height: 90px;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+main #content .navbar-fixed button{
+
+  color: white;
+  border: 1px solid white;
+  background-color: #080B12;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
 
 /* covers */
 
@@ -205,11 +232,122 @@ main #content .covers {
 .lista-orizzontale ul {
   text-decoration: none;
   text-align: center;
+  padding-top: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .lista-orizzontale ul li {
   display: inline-block;
+  font-size: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
+
+.lista-orizzontale ul li a{
+  text-decoration: none;
+  color: #74777C;
+}
+
+.lista-orizzontale ul li a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.lista-orizzontale ul li .sub{
+  width: 30px;
+  border-bottom: 2px solid greenyellow;
+  margin: 6px auto;
+}
+
+
+/* COVERS */
+
+.row{
+  text-align: center;
+  padding: 10px;
+}
+
+.row h3{ 
+  font-size: 22px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+
+.row ul{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.row ul li{
+  width: calc(100% / 6);
+  padding: 10px ;
+}
+
+.row ul li img{
+  width: 100%;
+}
+
+.row ul li h4{
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+.row ul li span{
+  font-size: 11px;
+  color: #707277;
+}
+
+
+/* CREATO PER */
+
+.creato-per{
+  text-align: left;
+}
+
+.creato-per h3{
+  margin-bottom: 0px;
+}
+
+.creato-per span{
+  margin-left: 10px;
+  line-height: 60px;
+  font-size: 12px;
+  color: #6C6E73;
+}
+
+.creato-per ul li{
+  text-align: center;
+}
+
+/* ARTISTA */
+
+.artista{
+  text-align: left;
+}
+
+.artista h3{
+  margin-bottom: 0px;
+}
+
+.artista span{
+  margin-left: 10px;
+  line-height: 60px;
+  font-size: 12px;
+  color: #6C6E73;
+}
+
+.artista ul li{
+  text-align: center;
+}
+
+.artista ul li img{
+  border-radius: 50%;
+}
+
 
 /* footer */
 footer {
